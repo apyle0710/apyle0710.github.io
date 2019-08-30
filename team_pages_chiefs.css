@@ -1,0 +1,193 @@
+th {
+    border: 2px solid #8c6b48;
+    }
+
+tr {
+    display: block;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    width: 50%;
+    height: 100px;
+    background-color: rgb(255,184,28);
+    color: rgb(227,24,55);
+    font-family: Impact;
+    text-align: center;
+    vertical-align: middle;
+}
+
+227,24,55
+
+td {
+    border: 2px solid #8c6b48;
+    font-size: 16px;
+    }
+
+body {
+    background-color: #1A1A1D;
+}
+
+div{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ffanaticsheader {
+    display: block;
+    font-size: 100px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: rgb(227,24,55);
+    color: rgb(255,184,28);
+    font-family: Impact;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#boxb {
+    display: block;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: rgb(255,184,28);
+    color: rgb(227,24,55);
+    font-family: Impact;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#boxc {
+    display: block;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: rgb(227,24,55);
+    color: rgb(255,184,28);
+    font-family: Impact;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#boxdcontainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: rgb(255,184,28);
+    color: rgb(255,184,28);
+    font-family: Impact;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#box1 {
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: rgb(255,184,28);
+    color: rgb(227,24,55);
+    font-family: Impact;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#box2 {
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: rgb(227,24,55);
+    color: rgb(255,184,28);
+    font-family: Impact;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+#cardinals {
+
+}
+
+
+
+
+
+/*table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#standings_header {
+    text-align: center;
+    border: 20px solid #8c6b48;
+    background-color: yellow;
+}
+
+#standings_cells {
+    text-align: left;
+    height: 100%;
+    border: 2px solid #8c6b48;
+}
+
+#boxa {
+    display: block;  the default for span
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#boxe {
+    display: block;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    width: 50%;
+    background-color: rgb(255,184,28);
+    color: rgb(255,184,28);
+    font-family: Impact;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*
+
+span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (-webkit-device-pixel-ratio : 3) {div.horizontal{
+        font-size: 7px;
+		width: 100%;
+    overflow: scroll;
+			}}
