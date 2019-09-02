@@ -1,10 +1,863 @@
+<!DOCTYPEhtml>
 <html>
-    <head>
-        <title>
-    2018 NFL Passing Stats
-        </title>
-    </head>
-    <body>
-        <h1>2018 NFL Passing Stats</h1>
-    </body>
-</html>
+
+<head>
+<meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<title>THE FOOTBALL MACHINE</title>
+<link href='./team_pages_chiefs.css' type='text/css' rel='stylesheet'>
+<style>
+.flex-container{
+display: flex;
+flex-wrap: wrap;
+}
+
+.flex-container > div{
+background-color: rgb(151,35,63);
+margin: 0px;
+text-align: center;
+font-size: 25px;
+width: 25%;
+}
+
+body{
+font-family: Impact;
+}
+
+.mobile-container{
+margin: auto;
+background-color: #555;
+height: 500px;
+color: white;
+border-radius: 10px;
+}
+
+.topnav{
+overflow: hidden;
+background-color: #333;
+position: relative;
+}
+
+.topnav #myLinks{
+display: none;
+}
+
+.topnav a{
+color: white;
+padding: 8px 8px;
+text-decoration: none;
+font-size: 10px;
+display: block;
+}
+
+.topnav a.icon{
+background: black;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.topnav a:hover{
+background-color: white;
+color: black;
+}
+
+.active{
+background-color: black;
+color: white;
+text-align: center;
+}
+
+.ffanaticsheader {
+display: block;
+font-size: 50px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: white;
+color: rgb(213,10,10);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#boxb {
+display: block;
+font-size: 40px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(213,10,10);
+color: white;
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#boxc {
+display: block;
+font-size: 40px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(1,51,105);
+color: white;
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#boxdcontainer {
+display: flex;
+flex-direction: row;
+font-size: 40px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+width: 100%;
+background-color: rgb(255,182,18);
+color: rgb(255,182,18);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#afcbox {
+font-size: 12px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+padding: 0px;
+background-color: white;
+color: rgb(213,10,10);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#nfcbox {
+font-size: 12px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+padding: 0px;
+background-color: white;
+color: rgb(1,51,105);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#box1 {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+padding: 0px;
+background-color: white;
+color: rgb(213,10,10);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#box2 {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: white;
+color: rgb(213,10,10);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#patriots {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: rgb(0,34,68);
+    color: rgb(198,12,48);
+    text-shadow: 1px 1px 8px rgb(176,183,188);
+    font-family: Impact;
+    text-align: center;
+    vertical-align: center;
+}
+
+#dolphins {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(255,133,0);
+color: rgb(0,145,160);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#bills {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(198,12,48);
+color: rgb(0,51,141);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#jets {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(32,55,49);
+color: rgb(255,255,255);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#ravens {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(158,124,12);
+color: rgb(26,25,95);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#steelers {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(0,0,0);
+color: rgb(255,194,14);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#browns {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(251,79,20);
+color: rgb(0,0,0);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#bengals {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(0,0,0);
+color: rgb(251,79,20);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#texans {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(167,25,48);
+color: rgb(3,32,47);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+}
+
+#colts {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(0,44,95);
+color: rgb(162,170,173);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#titans {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(64,149,209);
+color: rgb(0,41,91);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#jaguars {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(216,163,40);
+color: rgb(19,102,119);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#chiefs {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(227,24,55);
+color: rgb(255,184,28);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#chargers {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(0,128,198);
+color: rgb(255,194,14);
+text-shadow: 1px 1px 8px rgb(0,42,94);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#broncos {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(251,79,20);
+color: rgb(0,34,68);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#raiders {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(0,0,0);
+color: rgb(196,201,204);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#cowboys {
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(127,150,149);
+color: rgb(0,53,148);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#eagles{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(0,76,84);
+color: rgb(165,172,175);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#redskins{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(255,194,15);
+color: rgb(124,20,21);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#giants{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(25,46,108);
+color: rgb(178,0,50);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#bears{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(200,56,3);
+color: rgb(11,22,42);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#vikings{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(79,46,132);
+color: rgb(254,198,47);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#packers{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(36,66,60);
+color: rgb(252,190,20);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#lions{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(4,110,180);
+color: rgb(176,183,188);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#saints{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(211,188,141);
+color: rgb(16,24,31);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#falcons{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(167,25,48);
+color: rgb(165,172,175);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#panthers{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(0,133,202);
+color: rgb(191,192,191);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#buccaneers{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(212,9,9);
+color: rgb(176,185,191);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#rams{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(134,109,75);
+color: rgb(0,34,68);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#seahawks{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(105,190,40);
+color: rgb(0,34,68);
+text-shadow: 1px 1px 8px rgb(255,255,255);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#SF49ers{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(201,36,63);
+color: rgb(200,170,118);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+#cardinals{
+font-size: 15px;
+padding: 0px;
+margin: 0px;
+border: 0px;
+background-color: rgb(151,35,63);
+color: rgb(255,182,18);
+text-shadow: 1px 1px 8px rgb(0,0,0);
+font-family: Impact;
+text-align: center;
+vertical-align: middle;
+font-style: normal;
+}
+
+</style>
+</head>
+
+
+<body {text-align:center;}>
+<!--Simulateasmartphone/tablet-->
+<div class='mobile-container'>
+
+<!--TopNavigationMenu-->
+<div class='topnav'>
+<a href='#home' class='active'>THE FOOTBALL MACHINE</a>
+<div id='myLinks'>
+<a href='https://apyle0710github.netlify.com/arizona-cardinals/' target='_blank'>ARIZONA CARDINALS</a>
+<a href='https://apyle0710github.netlify.com/atlanta-falcons/' target='_blank'>ATLANTA FALCONS</a>
+<a href='https://apyle0710github.netlify.com/baltimore-ravens/' target='_blank'>BALTIMORE RAVENS</a>
+<a href='https://apyle0710github.netlify.com/buffalo-bills/' target='_blank'>BUFFALO BILLS</a>
+<a href='https://apyle0710github.netlify.com/carolina-panthers/' target='_blank'>CAROLINA PANTHERS</a>
+<a href='https://apyle0710github.netlify.com/chicago-bears/' target='_blank'>CHICAGO BEARS</a>
+<a href='https://apyle0710github.netlify.com/cincinnati-bengals/' target='_blank'>CINCINNATI BENGALS</a>
+<a href='https://apyle0710github.netlify.com/cleveland-browns/' target='_blank'>CLEVELAND BROWNS</a>
+<a href='https://apyle0710github.netlify.com/dallas-cowboys/' target='_blank'>DALLAS COWBOYS</a>
+<a href='https://apyle0710github.netlify.com/denver-broncos/' target='_blank'>DENVER BRONCOS</a>
+<a href='https://apyle0710github.netlify.com/detroit-lions/' target='_blank'>DETROIT LIONS</a>
+<a href='https://apyle0710github.netlify.com/green-bay-packers/' target='_blank'>GREEN BAY PACKERS</a>
+<a href='https://apyle0710github.netlify.com/houston-texans/' target='_blank'>HOUSTON TEXANS</a>
+<a href='https://apyle0710github.netlify.com/indianapolis-colts/' target='_blank'>INDIANAPOLIS COLTS</a>
+<a href='https://apyle0710github.netlify.com/jacksonville-jaguars/' target='_blank'>JACKSONVILLE JAGUARS</a>
+<a href='https://apyle0710github.netlify.com/kansas-city-chiefs/' target='_blank'>KANSAS CITY CHIEFS</a>
+<a href='https://apyle0710github.netlify.com/los-angeles-chargers/' target='_blank'>LOS ANGELES CHARGERS</a>
+<a href='https://apyle0710github.netlify.com/los-angeles-rams/' target='_blank'>LOS ANGELES RAMS</a>
+<a href='https://apyle0710github.netlify.com/miami-dolphins/' target='_blank'>MIAMI DOLPHINS</a>
+<a href='https://apyle0710github.netlify.com/minnesota-vikings/' target='_blank'>MINNESOTA VIKINGS</a>
+<a href='https://apyle0710github.netlify.com/new-england-patriots/' target='_blank'>NEW ENGLAND PATRIOTS</a>
+<a href='https://apyle0710github.netlify.com/new-orleans-saints/' target='_blank'>NEW ORLEANS SAINTS</a>
+<a href='https://apyle0710github.netlify.com/new-york-giants/' target='_blank'>NEW YORK GIANTS</a>
+<a href='https://apyle0710github.netlify.com/new-york-jets/' target='_blank'>NEW YORK JETS</a>
+<a href='https://apyle0710github.netlify.com/oakland-raiders/' target='_blank'>OAKLAND RAIDERS</a>
+<a href='https://apyle0710github.netlify.com/philadelphia-eagles/' target='_blank'>PHILADELPHIA EAGLES</a>
+<a href='https://apyle0710github.netlify.com/pittsburgh-steelers/' target='_blank'>PITTSBURGH STEELERS</a>
+<a href='https://apyle0710github.netlify.com/san-francisco-49ers/' target='_blank'>SAN FRANCISCO 49ERS</a>
+<a href='https://apyle0710github.netlify.com/seattle-seahawks/' target='_blank'>SEATTLE SEAHAWKS</a>
+<a href='https://apyle0710github.netlify.com/tampa-bay-buccaneers/' target='_blank'>TAMPA BAY BUCCANEERS</a>
+<a href='https://apyle0710github.netlify.com/tennessee-titans/' target='_blank'>TENNESSEE TITANS</a>
+<a href='https://apyle0710github.netlify.com/washington-redskins/' target='_blank'>WASHINGTON REDSKINS</a>
+</div>
+<a href='javascript:void(0);' class='icon' onclick='myFunction()'>
+<i class='fa fa-bars'></i>
+</a>
+</div>
+<script>
+function myFunction(){
+var x = document.getElementById('myLinks');
+if (x.style.display === 'block') {
+x.style.display = 'none';
+} else {
+x.style.display = 'block';
+}
+}
+</script>
+<header>
+<h1 class='ffanaticsheader' style='text-align:center'>2018 NFL STANDINGS</h1>
+</header>
+<div>
+<h4 id='boxb'>AFC STANDINGS</h4>
+</div>
+<div class='flex-container'>
+<div id='afcbox'>
+<h5>AFC EAST</h5>
+</div>
+<div id='afcbox'>
+<h5>AFC NORTH</h5>
+</div>
+<div id='afcbox'>
+<h5>AFC SOUTH</h5>
+</div>
+<div id='afcbox'>
+<h5>AFC WEST</h5>
+</div>
+</div>
+<div class='flex-container'>
+<div id='patriots'>
+<h5>NEW ENGLAND
+    <br>PATRIOTS</h5>
+</div>
+<div id='ravens'>
+<h5>BALTIMORE
+    <br>RAVENS</h5>
+</div>
+<div id='texans'>
+<h5>HOUSTON
+    <br>TEXANS</h5>
+</div>
+<div id='chiefs'>
+<h5>KANSAS CITY
+    <br>CHIEFS</h5>
+</div>
+</div>
+<div class='flex-container'>
+<div id='dolphins'>
+<h5>MIAMI
+    <br>DOLPHINS</h5>
+</div>
+<div id='steelers'>
+<h5>PITTSBURGH
+    <br>STEELERS</h5>
+</div>
+<div id='colts'>
+<h5>INDIANAPOLIS
+    <br>COLTS</h5>
+</div>
+<div id='chargers'>
+<h5>LOS ANGELES
+    <br>CHARGERS</h5>
+</div>
+</div>
+<div class='flex-container'>
+<div id='bills'>
+<h5>BUFFALO
+    <br>BILLS</h5>
+</div>
+<div id='browns'>
+<h5>CLEVELAND
+    <br>BROWNS</h5>
+</div>
+<div id='titans'>
+<h5>TENNESSEE
+    <br>TITANS</h5>
+</div>
+<div id='broncos'>
+<h5>DENVER
+    <br>BRONCOS</h5>
+</div>
+</div>
+<div class='flex-container'>
+<div id='jets'>
+<h5>NEW YORK
+    <br>JETS</h5>
+</div>
+<div id='bengals'>
+<h5>CINCINNATI
+    <br>BENGALS</h5>
+</div>
+<div id='jaguars'>
+<h5>JACKSONVILLE
+    <br>JAGUARS</h5>
+</div>
+<div id='raiders'>
+<h5>OAKLAND
+    <br>RAIDERS</h5>
+</div>
+</div>
+<div>
+</div>
+<div>
+<h4 id='boxc'>NFC STANDINGS</h4>
+</div>
+<div class='flex-container'>
+<div id='nfcbox'>
+<h5>NFC EAST</h5>
+</div>
+<div id='nfcbox'>
+<h5>NFC NORTH</h5>
+</div>
+<div id='nfcbox'>
+<h5>NFC SOUTH</h5>
+</div>
+<div id='nfcbox'>
+<h5>NFC WEST</h5>
+</div>
+</div>
+<div class='flex-container'>
+<div id='cowboys'>
+<h5>DALLAS
+    <br>COWBOYS</h5>
+</div>
+<div id='bears'>
+<h5>CHICAGO
+    <br>BEARS</h5>
+</div>
+<div id='saints'>
+<h5>NEW ORLEANS
+    <br>SAINTS</h5>
+</div>
+<div id='rams'>
+<h5>LOS ANGELES
+    <br>RAMS</h5>
+</div>
+</div>
+<div class='flex-container'>
+<div id='eagles'>
+<h5>PHILADELPHIA
+    <br>EAGLES</h5>
+</div>
+<div id='vikings'>
+<h5>MINNESOTA
+    <br>VIKINGS</h5>
+</div>
+<div id='falcons'>
+<h5>ATLANTA
+    <br>FALCONS</h5>
+</div>
+<div id='seahawks'>
+<h5>SEATTLE
+    <br>SEAHAWKS</h5>
+</div>
+</div>
+<div class='flex-container'>
+<div id='redskins'>
+<h5>WASHINGTON
+    <br>REDSKINS</h5>
+</div>
+<div id='packers'>
+<h5>GREEN BAY
+    <br>PACKERS</h5>
+</div>
+<div id='panthers'>
+<h5>CAROLINA
+    <br>PANTHERS</h5>
+</div>
+<div id='SF49ers'>
+<h5>SAN FRANCISCO
+    <br>49ERS</h5>
+</div>
+</div>
+<div class='flex-container'>
+<div id='giants'>
+<h5>NEW YORK
+    <br>GIANTS</h5>
+</div>
+<div id='lions'>
+<h5>DETROIT
+    <br>LIONS</h5>
+</div>
+<div id='buccaneers'>
+<h5>TAMPA BAY
+    <br>BUCCANEERS</h5>
+</div>
+<div id='cardinals'>
+<h5>ARIZONA
+    <br>CARDINALS</h5>
+</div>
+</div>
